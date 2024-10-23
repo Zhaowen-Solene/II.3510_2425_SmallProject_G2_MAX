@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackerActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Workout Type"
+            android:textColor="@color/mainColor"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <RadioGroup
+            android:id="@+id/workout_type_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="32dp">
+
+            <RadioButton
+                android:id="@+id/type_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:checked="true"
+                android:button="@null"
+                android:background="@drawable/workout_type_selector"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/type_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Training"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:button="@null"
+                android:background="@drawable/workout_type_selector"
+                android:textColor="@color/mainColor" />
+
+            <RadioButton
+                android:id="@+id/type_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Run"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:button="@null"
+                android:background="@drawable/workout_type_selector"
+                android:textColor="@color/mainColor" />
+
+            <RadioButton
+                android:id="@+id/type_walk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Walk"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:button="@null"
+                android:background="@drawable/workout_type_selector"
+                android:textColor="@color/mainColor" />
+
+            <RadioButton
+                android:id="@+id/type_yoga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/workout_type_selector"
+                android:button="@null"
+                android:padding="12dp"
+                android:text="Yoga"
+                android:textColor="@color/mainColor"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainColor"
+            android:padding="16dp"
+            android:text="START"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_nav"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

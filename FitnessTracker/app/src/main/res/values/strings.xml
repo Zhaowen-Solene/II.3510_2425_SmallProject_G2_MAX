@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FitnessTracker</string>
+    <string name="LoginText">Are you have an account?  <font color="#FEE80A">Sign up</font></string>
 </resources>

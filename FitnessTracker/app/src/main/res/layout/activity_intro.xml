@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/mainColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="631dp"
+        app:srcCompat="@drawable/pic_1"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-35dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startBtn"
+        style="@android:style/Widget.Button"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/yellow_bg"
+        android:text="Let's go"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
