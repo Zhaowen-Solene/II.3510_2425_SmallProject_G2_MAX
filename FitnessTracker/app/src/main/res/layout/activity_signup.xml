@@ -4,175 +4,161 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="8dp"
     android:background="@color/mainColor">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create Account"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
 
     <ImageView
         android:id="@+id/profileImage"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/default_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:background="@android:color/white"
-        android:padding="2dp"/>
+        android:padding="2dp"
+        android:src="@drawable/default_avatar" />
 
     <Button
         android:id="@+id/selectImageBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Avatar"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/black"/>
+        android:text="Select Avatar"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
 
-    <!-- 用户名输入框 -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="Username"
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
         <EditText
             android:id="@+id/usernameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
             android:textColor="@color/white"
-            android:inputType="text"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- 密码输入框 -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="Password"
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:passwordToggleEnabled="true"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
         <EditText
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:textColor="@color/white"
-            android:inputType="textPassword"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- 确认密码输入框 -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="Confirm Password"
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:passwordToggleEnabled="true"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
         <EditText
             android:id="@+id/confirmPasswordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:textColor="@color/white"
-            android:inputType="textPassword"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- 其他字段保持不变 -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="Nickname"
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
         <EditText
             android:id="@+id/nicknameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
             android:textColor="@color/white"
-            android:inputType="text"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="Height (cm)"
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
         <EditText
             android:id="@+id/heightInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:textColor="@color/white"
-            android:inputType="number"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="Weight (kg)"
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
         <EditText
             android:id="@+id/weightInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:textColor="@color/white"
-            android:inputType="number"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:hint="Your Motto"
-        android:textColorHint="@color/white"
-        app:boxStrokeColor="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <EditText
-            android:id="@+id/mottoInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:inputType="textMultiLine"
-            android:maxLines="2"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/signUpButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:padding="12dp"
         android:background="@drawable/yellow_bg"
-        android:textColor="@color/black"/>
+        android:padding="8dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
